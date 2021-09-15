@@ -1,0 +1,56 @@
+#main .row .col {
+
+  &.num64 {
+    min-height: 120px;
+    flex-basis: 12.5%
+  }
+}
+
+.box_patient {
+
+  &.num64 {
+    h2 {
+      height: 22px;
+      line-height: 22px;
+      font-size: 0.4rem;
+    }
+
+    .cate {
+      .col_box {
+        height: 31px;
+
+        h3 {
+          height: 13px;
+          line-height: 13px;
+          font-size: 0.4rem;
+        }
+
+        .col_3 {
+          h3 {
+            height: 13px;
+            line-height: 13px;
+            font-size: 0.6rem;
+          }
+
+          span {
+            font-size: 0.6rem;
+            height: 17px;
+            line-height: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width:1680px) {
+  #main .row .col.num64 {flex-basis: 20%}
+}
+
+@media all and (max-width:1200px){
+  #main .row .col.num64 {flex-basis:33.33%}
+}
+
+@media all and (max-width:640px){
+  #main .row .col.num64 {flex-basis:100%}
+}

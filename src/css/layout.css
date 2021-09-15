@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+
+body  {background:#242e42}
+#wrap {width:100%;min-width: 320px;background:#242e42}
+
+#header {position:relative;}
+#header .header_top {height:50px;border-bottom:2px solid #20293c;overflow:hidden}
+#header .header_top .logo {float:left;font-size:1.125rem;line-height:3.125rem;padding-left:20px}
+#header .header_top .logo strong {color:#1f8efa}
+#header .header_top .top_item {float:right;padding-right:20px}
+#header .header_top .top_item li {display:block;float:left;font-size:0.8125rem;padding:10px 0 10px 20px}
+#header .header_top .top_item i {color:#657d95;font-size:1rem;vertical-align:top;margin:6px 6px 0 0}
+#header .header_top .top_item li a {display:inline-block;font-weight:500;line-height:30px}
+#header .header_top .top_item li .btn_volume {display:inline-block;position:relative;background:#20293c;width:60px;text-align:center;border-radius:3px;color:#657d95;font-weight:500}
+
+#nav {position:relative;overflow:hidden}
+#nav .gnb {overflow:hidden}
+#nav .gnb ul {padding:20px 10px 10px;overflow:hidden}
+#nav .gnb li {float:left;margin:0 10px 10px;height:50px;min-width:200px}
+#nav .gnb li a {display:inline-block;position:relative;font-size:0.875rem;color:#98a7b9;font-weight:500;background:#1d2637;border-radius:3px;height:100%;line-height:50px;text-align:center;width:100%;border-left:5px solid #1d2637}
+#nav .gnb li a:before {content:'';display:block;position:absolute;top:0px;right:0px; bottom:0px;left:0px;z-index:1}
+#nav .gnb li a:hover:before#nav .gnb li a:focus:before{}
+#nav .gnb li a:hover,
+#nav .gnb li a:focus,
+#nav .gnb li a:active
+{border-left:5px solid #1f8efa;color:#1f8efa}
+#nav .gnb li a.on {border-left:5px solid #1f8efa;color:#1f8efa}
+
+
+#main {position:relative;overflow:hidden;padding:0 20px;margin-bottom:20px}
+#main .layout {position:relative;max-width:1880px;margin:0 auto;box-shadow:0px 6px 13px 0px rgba(21, 33, 56, 0.53);border:1px solid #20293c}
+#main .row {display:flex;flex-direction:row;flex-wrap:wrap}
+#main .row .col {flex:1 1;margin:-1px;padding:0;box-sizing:border-box;background:#2f3b52;min-height: 232px;border:1px solid #20293c;flex-basis:25%}
+
+.box_patient {position:relative;overflow:hidden}
+.box_patient h2 {display:inline-block;background:#222c3f;height:31px;line-height:30px;font-size:0.875rem;color:#fff;font-weight:500;padding-left:15px;border-bottom:1px solid #2f3b52;width:calc(100% - 1px);box-sizing:border-box}
+.box_patient .cate {display:flex;flex-direction:row;flex-wrap:wrap}
+.box_patient .cate .col_box {flex:1 1;margin:0;padding:0;flex-basis:50%;height:66px}
+.box_patient .cate .col_box h3 {background:#293348;height:26px;line-height:26px;font-size:0.875rem;color:#70889e;font-weight:500;padding:0 10px}
+.box_patient .cate .col_box .graph_box {width:100%;height:40px}
+.box_patient .cate .col_box .col_3 {float:left;width:33.2%;text-align:center}
+.box_patient .cate .col_box .col_3 h3 {background:#293348;height:26px;line-height:26px;font-size:0.875rem;font-weight:500;padding:0}
+.box_patient .cate .col_box .col_3 span {height:40px;line-height:40px;font-size:1.5rem;font-weight:500}
+
+.co_01 {color:#7b8f38 !important}
+.co_02 {color:#c3fe00}
+.co_03 {color:#2d8a7f !important}
+.co_04 {color:#00cfb7}
+.co_05 {color:#5a5694 !important}
+.co_06 {color:#7d75f6}
+.co_07 {color:#903d28 !important}
+.co_08 {color:#f53303}
+
+.box_none {display:table;background:#192131;width:100%;height:100%;text-align:center}
+.box_none div {display:table-cell;vertical-align:middle}
+.box_none h2 {color:#768499;font-weight:500;font-size:1.25rem;margin-bottom:36px}
+.box_none .btn_admit {display:inline-block;position:relative;background:#2f3b52;width:120px;height:40px;line-height:40px;border-radius:3px;font-size:1rem;color:#fff}
+.box_none .btn_admit:before {content:'';display:block;position:absolute;top:0px;right:0px; bottom:0px;left:0px;z-index:1}
+.box_none .btn_admit:hover:before.box_none .btn_admit:focus:before{}
+.box_none .btn_admit:hover,
+.box_none .btn_admit:focus,
+.box_none .btn_admit:active {background:#1f8efa;border-width:0;text-decoration:none}
+
+@media all and (max-width:1680px){
+#main .row .col {flex-basis:33.33%}
+}
+
+@media all and (max-width:1200px){
+#nav .gnb ul {padding:20px 10px 10px;overflow:hidden}
+#nav .gnb li {width:calc(33.33% - 20px);min-width:inherit}
+#main .row .col {flex-basis:50%}  
+}
+
+@media all and (max-width:640px){
+#nav .gnb li {width:calc(50% - 20px)}
+#main .row .col {flex-basis:100%}  
+}
+
+
+
+
+
+
